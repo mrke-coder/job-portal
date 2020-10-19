@@ -1,0 +1,51 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+body {
+  background: #f1f1f1;
+  font-family: Robot, sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+.navbar {
+  position: sticky;
+  padding-bottom: 15px;
+  text-align: center;
+  line-height: 2;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.white__bg {
+  background: #FFF;
+}
+
+.nav-logo {
+  display: block;
+  width: 80px;
+  height: 60px;
+}
+
+ul.navbar__menu {
+  list-style: none;
+  display: flex;
+  margin: 0 24px;
+}
+
+.menu__item {
+  padding: 5px 20px;
+}
+
+/*# sourceMappingURL=app.css.map */

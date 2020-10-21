@@ -1,0 +1,48 @@
+@import "libs/normalize";
+@import "libs/color-variables";
+@import "libs/variables";
+@import "libs/global";
+@import "libs/navbar";
+
+*, *::after, *::before{
+ box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  background: #F1F1F1;
+  color: rgba(0,0,0,0.6);
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.mobile-nav{
+  position: absolute;
+  top: 100%;
+  transform: translateY(-100%);
+  width: 100%;
+  background-color: #FFF;
+}
+
+.mobile-nav a {
+  color: #6d7a8b;
+}
+
+.mobile-nav a::before{
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-left: 5px;
+  background: url("../img/icons/home.svg") center center no-repeat;
+}
+

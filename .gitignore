@@ -1,2 +1,3 @@
 Liste des fichiers a ignorer lors des commit
 /dart-sass/*
+execute.bat

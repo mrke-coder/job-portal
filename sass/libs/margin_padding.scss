@@ -27,3 +27,36 @@
     margin: $i*0.25rem;
   }
 }
+
+@for $i from 1 to 10 {
+  .p-#{$i} {
+    padding: $i*0.25rem;
+  }
+}
+
+.sptb{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.mb-0{
+  margin-bottom: 0;
+}
+
+.p-0{
+  padding: 0;
+}
+
+.ml-auto, .mx-auto{
+  margin-left: auto !important;
+}
+
+.mr-auto, .mx-auto {
+  margin-right: auto !important;
+} 
+
+@media (min-width: 768px){
+.mt-md-0, .my-md-0 {
+    margin-top: 0 !important;
+}
+}

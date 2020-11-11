@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mr KE">
+    <title>JobPortal</title>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+        </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="OwlCarousel2/dist/assets/owl.carousel.css">
+    <script src="../OwlCarousel2/dist/owl.carousel.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body>
+    <div id="global-loader">
+        <img src="../img/loader.svg" alt="LOADER" class="loader-img">
+    </div>
+    <header class="header-main">
+        <div class="top-bar">
+            <div class="container">
+
+                <div class="desktop-topbar-1">
+                    <ul class="socials">
+                        <li class="li">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="desktop-topbar-1 top-bar-right">
+                    <ul class="customs">
+                        <li>
+                            <a href="#"><i class="fa fa-user mr-1"></i> S'inscrire</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-lock mr-1"></i> Se connecter</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-tachometer-alt mr-1"></i> Tableau de bord</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container top-bar-mobile">
+                <ul class="top-bar-mobile-left">
+                    <li class="mr-2">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="mr-2">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="mr-2">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+                <ul class="top-bar-mobile-right">
+                    <li class="mr-2"><a href="#"><i class="fa fa-user"></i></a></li>
+                    <li class="mr-2"><a href="#"><i class="fa fa-lock"></i></a></li>
+                    <li><a href="#"><i class="fa fa-tachometer-alt"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-nav sticky">
+            <div class="container">
+                <ul class="nav">
+                    <div class="desktop-logo">
+                        <li><a href="#"><img src="../img/logo.png" alt="LOGO"></a></li>
+                    </div>
+                    <div class="nav-items">
+                        <li><a href="#" class="menu-link active">Accueil</a></li>
+                        <li><a href="#" class="menu-link">Services</a></li>
+                        <li><a href="../pages/jobs-items.html" class="menu-link">Emploi</a></li>
+                        <li><a href="#" class="menu-link">Services</a></li>
+                        <li><a href="#" class="menu-link">Contact</a></li>
+                    </div>
+                    <div class="job-settings">
+                        <li class="mr-2"><a class="btn btn-danger" href="#">Poster une nouvelle offre</a></li>
+                        <li><a class="btn btn-info" href="#">Créer une alerte</a></li>
+                    </div>
+                </ul>
+                <ul class="mobile-top-nav">
+                    <li>
+                        <a href="#"> <img src="../img/logo.png" class="mobile-logo" alt="LOGO"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="alert-icon"><i class="fa fa-bell"></i></a>
+                    </li>
+
+                </ul>
+                <ul class="side-nav" id="mobile-menu">
+                    <li><a href="#">Sass</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">Mobile</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <section>
+            <div class="banner image-cover sptb-1">
+                <div class="banner-text row">
+                    <div class="container">
+                        <div class="text-center text-white mb-7 col-lg-12">
+                            <h1 class="mb-1">
+                                <span class="font-weight-bold">200</span>
+                                Emplois disponibles
+                            </h1>
+                        </div>
+                        <div class="search-form col-lg-12">
+                            <form action="#" class="form">
+                                <div class="row">
+                                    <div class="form-group col-lg-3 col-sm-12 mb-3">
+                                        <input type="text" class="form-control input-lg"
+                                            placeholder="Recherche de travail">
+                                    </div>
+                                    <div class="form-group col-lg-3 col-sm-12 mb-3">
+                                        <input type="text" class="form-control input-lg"
+                                            placeholder="Sélectionnez l'emplacement">
+                                    </div>
+                                    <div class="form-group col-lg-3 col-sm-12 mb-3">
+                                        <select class="form-control input-lg select2">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-3 col-sm-12 mb-3">
+                                        <button class="btn btn-block btn-danger btn-lg">
+                                            <i class="fa fa-search mr-1"></i> Rechercher
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white border-bottom">
+            <div class="container">
+                <div class="page-header">
+                    <h4 class="page-title">Emploi</h4>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><a href="#">Emploi</a></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="sptb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="card overflow-hidde">
+                            <div class="ribbon ribbon-top-right text-danger">
+                                <span class="bg-danger">Urgent</span>
+                            </div>
+                            <div class="card-body h100">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="profile-pic mb-0">
+                                            <div class="d-flex">
+                                                <img src="../img/img1.jpg" alt="" class="w20 h-20">
+                                                <div class="ml-4">
+                                                    <a href="#" class="text-dark">
+                                                        <h4 class="mt-3 mb-1 fs-20 font-weight-bold">FullStack Developer</h4>
+                                                    </a>
+                                                    <div>
+                                                        <ul class="mb-0 d-flex">
+                                                            <li class="mr-3">
+                                                                <a href="#" class="icons">
+                                                                    <i class="fa fa-briefcase text-muted mr-1"></i>Matériel informatique et réseau Pvt Ltd
+                                                                </a>
+                                                            </li>
+                                                            <li class="mr-3">
+                                                                <a href="#" class="icons">
+                                                                    <i class="fa fa-map-maker text-muted mr-1"></i>Abidjan
+                                                                </a>
+                                                            </li>
+                                                            <li class="mr-3">
+                                                                <a href="#" class="icons">
+                                                                    <i class="fa fa-calendar text-muted mr-1"></i>il y 5 jours
+                                                                </a>
+                                                            </li>
+                                                            <li class="mr-3">
+                                                                <a href="#" class="icons">
+                                                                    <i class="fa fa-eye text-muted mr-1"></i>1567
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="icons mt-6">
+                                                        <a href="#" class="btn btn-info icons" toggle="modal" data-target="#apply">
+                                                           <i class="fa fa-check mr-1"></i>
+                                                            postuler
+                                                        </a>
+                                                        <a href="#" class="btn btn-primary icons" toggle="modal" data-target="#contact">
+                                                            <i class="fa fa-phone mr-1"></i>
+                                                            Contacter maintenant
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body border-top">
+                                <h4 class="mb-4 card-title">Description de l'emploi</h4>
+                                <div class="mb-4">
+                                    <p>At vero eos et accusamus et iusto 
+                                        odio dignissimos ducimus qui blanditiis
+                                         praesentium voluptatum deleniti atcorrupti quos dolores 
+                                         et quas molestias excepturi sint occaecati cupiditate non
+                                         provident, similique sunt in culpa qui officia
+                                         deserunt mollitia animi, id est laborum et dolorum fuga.
+                                    </p>
+                                    <p>On the other hand, we denounce with 
+                                        righteous indignation and dislike men who are 
+                                        so beguiled and demoraliz the charms of
+                                         pleasure of the moment, so blinded by desire,
+                                          that they cannot foresee the pain and trouble 
+                                          thena bound to ensue; and equal blame belongs to 
+                                          those who fail in their duty through weakness of will, 
+                                          which is the same as 
+                                        saying through shrinking from toil and pain..
+                                    </p>
+                                </div>
+                                <h4 class="card-title mb-4">Détails du poste</h4>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="table-responsive">
+                                            <table class="table row table-borderless w100 m-0 text-nowrap">
+                                                <tbody class="col-lg-6">
+                                                    <tr>
+                                                        <td class="w-150 px-0">
+                                                            <span class="font-weight-semibold">Type d'emploi</span>
+                                                        </td>
+                                                        <td><span>:</span></td>
+                                                        <td><span>A temps pleins</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="w-150 px-0">
+                                                            <span class="font-weight-semibold">Rôle</span>
+                                                        </td>
+                                                        <td><span>:</span></td>
+                                                        <td><span>Technicien matériel</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="w-150 px-0">
+                                                            <span class="font-weight-semibold">Exp min</span>
+                                                        </td>
+                                                        <td><span>:</span></td>
+                                                        <td><span>1 an</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="w-150 px-0">
+                                                            <span class="font-weight-semibold">Eligibilité</span>
+                                                        </td>
+                                                        <td><span>:</span></td>
+                                                        <td><span>Bac+5</span></td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody class="col-lg-6">
+                                                    <tr>
+                                                        <td class="w-150 px-0">
+                                                            <span class="font-weight-semibold">Exp max</span>
+                                                        </td>
+                                                        <td><span>:</span></td>
+                                                        <td><span>5 ans</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="w-150 px-0">
+                                                            <span class="font-weight-semibold">Langues</span>
+                                                        </td>
+                                                        <td><span>:</span></td>
+                                                        <td><span>Français, Anglais</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="w-150 px-0">
+                                                            <span class="font-weight-semibold">Localisation</span>
+                                                        </td>
+                                                        <td><span>:</span></td>
+                                                        <td><span>Abidjan, Côte d'Ivoire</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="w-150 px-0">
+                                                            <span class="font-weight-semibold">Compagnie</span>
+                                                        </td>
+                                                        <td><span>:</span></td>
+                                                        <td><span>USDNCI</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="list-id">
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href="#" class="mb-0">ID du Poste  : #8976542</a>
+                                        </div>
+                                        <div class="col col-auto">
+                                            Posté par 
+                                            <a href="#" class="mb-0 font-weight-bold">USDNCI</a>
+                                            / 25 Déc 2020
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-light-50">
+                                <div class="icons">
+                                    <a href="#" toggle="modal" data-target="#apply" class="btn btn-success mt-1 mb-1">
+                                       <i class="fa fa-check mr-1"></i>
+                                        Postuler
+                                    </a>
+                                    <a href="#" class="btn btn-primary icons mt-1 mb-1">
+                                        <i class="fa fa-share mr-1"></i>
+                                        Partager
+                                    </a>
+                                    <a href="#" class="btn btn-info icons mt-1 mb-1">
+                                        <i class="fa fa-print mr-1"></i>
+                                        Imprimer
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="mb-5 mt-4">Articles Similaires</h4>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="arrow-ribbon bg-purple">
+                                        Temps partiel
+                                    </div>
+                                    <div class="item-card-image">
+                                        <div class="item-card-images">
+                                            <a href="#"></a>
+                                            <img src="../img/news_1.jpg" alt="IMG" class="image-cover">
+                                        </div>
+                                    </div>
+                                    <div class="item-card-overlay-text">
+                                        <a href="#" class="text-white">Emploi</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="item-card-desc">
+                                            <a href="#" class="text-dark">
+                                                <h4 class="font-weight-semibold">
+                                                    Emplois de réceptionniste
+                                                </h4>
+                                            </a>
+                                        </div>
+                                        <div class="item-card-text">
+                                            <ul class="icon-card mb-0">
+                                                <li>
+                                                    <a href="#" class="icons">
+                                                        <i class="fa fa-map-marker text-muted mr-1"></i>Abidjan
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="icons">
+                                                        <i class="fa fa-calendar text-muted mr-1"></i>il y 5 jours
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="icons">
+                                                        <i class="fa fa-user text-muted mr-1"></i>Ernest kouassi
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="icons">
+                                                        <i class="fa fa-phone text-muted mr-1"></i>55 56 59 17
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="arrow-ribbon bg-purple">
+                                        Temps partiel
+                                    </div>
+                                    <div class="item-card-image">
+                                        <div class="item-card-images">
+                                            <a href="#"></a>
+                                            <img src="../img/news_1.jpg" alt="IMG" class="image-cover">
+                                        </div>
+                                    </div>
+                                    <div class="item-card-overlay-text">
+                                        <a href="#" class="text-white">Emploi</a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="item-card-desc">
+                                            <a href="#" class="text-dark">
+                                                <h4 class="font-weight-semibold">
+                                                    Emplois de réceptionniste
+                                                </h4>
+                                            </a>
+                                        </div>
+                                        <div class="item-card-text">
+                                            <ul class="icon-card mb-0">
+                                                <li>
+                                                    <a href="#" class="icons">
+                                                        <i class="fa fa-map-marker text-muted mr-1"></i>Abidjan
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="icons">
+                                                        <i class="fa fa-calendar text-muted mr-1"></i>il y 5 jours
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="icons">
+                                                        <i class="fa fa-user text-muted mr-1"></i>Ernest kouassi
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="icons">
+                                                        <i class="fa fa-phone text-muted mr-1"></i>55 56 59 17
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Note et avis</h3>
+                            </div>
+                            <div class="card-body">
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Laisser une réponse</h3>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="votre nom">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="votre adresse email">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea rows="6" class="form-control" placeholder="Votre message"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-primary">Envoyer la réponse</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Posté Par</h4>
+                            </div>
+                            <div class="card-body item-user">
+                                <div class="profile-pic mb-0">
+                                    <img src="../img/employee.png" alt="USER" class="avatar-xxl border-round">
+                                    <div>
+                                        <a href="#" class="text-dark">
+                                            <h4 class="mt-3 mb-1 font-weight-semibold">Ernest KOUASSI</h4>
+                                        </a>
+                                        <span class="text-gray">Recruteur RH de matériel informatique et réseau Pvt Ltd</span>
+                                        <span class="text-muted">Membre depuis novembre 2008</span>
+                                        <h6 class="mt-2 mb-0">
+                                            <a href="#" class="btn btn-primary btn-sm">Voir toutes les annonces</a>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body item-user">
+                                <h4 class="card-title mb-4">
+                                    Informations de contact
+                                </h4>
+                                <div>
+                                    <h6>
+                                        <span class="font-weight-semibold">
+                                            <i class="fa fa-envelope mr-2 mb-2"></i>
+                                        </span>
+                                        <a href="#" class="text-body">ernestkouassi@gmail.com</a>
+                                    </h6>
+                                    <h6>
+                                        <span class="font-weight-semibold">
+                                            <i class="fa fa-phone mr-2 mb-2"></i>
+                                        </span>
+                                        <a href="#" class="text-primary">55 56 59 17</a>
+                                    </h6>
+                                    <h6>
+                                        <span class="font-weight-semibold">
+                                            <i class="fa fa-link mr-2"></i>
+                                        </span>
+                                        <a href="#" class="text-primary">https://higtech-ci.com</a>
+                                    </h6>
+                                </div>
+                                <div class="item-user-icons mt-4">
+                                    <a href="#" class="facebook-bg mt-0">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="twitter-bg mt-0">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="google-bg mt-0">
+                                        <i class="fab fa-google"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-light-50">
+                                <div class="text-left">
+                                    <a href="#" class="btn btn-info">
+                                        <i class="fa fa-envelope mr-1"></i>Chatter
+                                    </a>
+                                    <a href="#" class="btn btn-primary" toggle="modal" data-target="#contact">
+                                        <i class="fa fa-user mr-1"></i>Contacter
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Mots clés</h4>
+                            </div>
+                            <div class="card-body product-filter-desc">
+                                <div class="product-tags clearfix">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="#">Logiciel</a></li>
+                                        <li><a href="#">Logiciel</a></li>
+                                        <li><a href="#">Logiciel</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Partager</h4>
+                            </div>
+                            <div class="card-body product-filter-desc">
+                                <div class="product-filter-icons text-center">
+                                    <a href="#" class="facebook-bg mt-0">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="twitter-bg mt-0">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="google-bg mt-0">
+                                        <i class="fab fa-google"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">localisation Map</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="map-header">
+                                    <div class="map-header-layer" id="map" style="position: relative; overflow: hidden">
+                                        <div style="height: 100%;width: 100%;position: absolute;top: 0;left: 0;background-color: rgb(229,227,223)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Recherche de travail</h3>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="search-text" placeholder="Que cherchez-vous?">
+                                    </div>
+                                    <div class="form-group">
+                                        <select name="category" id="select2-category" class="form-control custom-select select2 select2-show-search select2-hidden-accessible">
+                                            <option>Toutes les catégories</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-block btn-primary">Chercher</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card mb-0">
+                            <div class="card-header">
+                                <h3 class="card-title">emplois similaires</h3>
+                            </div>
+                            <div class="card-bordy pb-3">
+                                <ul class="vertical-scroll" style="overflow-y: hidden; height: 568px">
+                                    <li style="" class="item">
+                                        <div class="item-det card-body">
+                                            <a href="#" class="text-dark">
+                                                <h4 class="mb-2 fs-16 font-weight-semibold">Hard ware Engineer</h4>
+                                            </a>
+                                            <small class="text-muted">
+                                                <i class="si si-briefcase text-muted"></i>
+                                                IT Hardware &amp; Network Pvt ltd
+                                                <i class="si si-location-pin text-muted ml-3"></i>
+                                                USA
+                                            </small>
+                                            <div class="icons mt-3 pb-0 ">
+                                                <a href="#"
+                                                   class="btn btn-primary btn-sm icons"
+                                                   data-toggle="modal" data-target="#apply"> Postuler</a>
+                                                <a href="#" class="btn btn-light btn-sm icons">
+                                                    Voir Details
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <div class="mobile-nav">
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="#" class="menu-link active">
+                    <i class="material-icons">home</i>
+                    Accueil
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link button-collapse" data-activates="mobile-menu">
+                    <i class="material-icons">menu</i>
+                    Services
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                    <i class="material-icons">search</i>
+                    Rechercher
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                    <i class="material-icons">work</i>
+                    Emploi
+                </a>
+            </li>
+        </ul>
+        </nav>
+    </div>
+    
+    <a href="#" id="notification">
+        <span class="notification-text">Créer une alerte emploi</span>
+        <i class="fa fa-bell"></i>
+    </a>
+
+    <a href="#" id="back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/sticky.js"></script>
+</body>
+
+</html>

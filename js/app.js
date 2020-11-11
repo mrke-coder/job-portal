@@ -26,4 +26,24 @@ $(function () {
     }
 
   });
+
+  $(window).on("scroll", function(e){
+    if($(this).scrollTop() > 0){
+      $("#back-to-top").fadeIn('slow')
+    } else{
+      $("#back-to-top").fadeOut('slow');
+    }
+  });
+
+  $("#back-to-top").on("click", function(e){
+      $("html, body").animate({
+        scrollTop: 0
+      }, 600);
+
+      return false;
+  });
+
+    $(window).on('load', function(e){
+      $("#global-loader").fadeOut('slow');
+    });
 });

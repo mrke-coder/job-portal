@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mr KE">
     <title>JobPortal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700">
     <script src="https://code.jquery.com/jquery-3.5.1.js"
-            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-            crossorigin="anonymous">
-    </script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+        </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
     <link rel="stylesheet" href="OwlCarousel2/dist/assets/owl.carousel.css">
@@ -20,9 +18,13 @@
     <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
+
 <body>
+    <div id="global-loader">
+        <img src="img/loader.svg" alt="LOADER" class="loader-img">
+    </div>
     <header class="header-main">
-           <div class="top-bar">
+        <div class="top-bar">
             <div class="container">
 
                 <div class="desktop-topbar-1">
@@ -71,206 +73,178 @@
                 </ul>
             </div>
         </div>
-           <div class="header-nav">
-               <div class="container">
-                   <ul class="nav">
-                       <div class="desktop-logo">
-                           <li><a href="#"><img src="img/logo.png" alt="LOGO"></a></li>
-                       </div>
-                       <div class="nav-items">
-                           <li><a href="#" class="menu-link active">Accueil</a></li>
-                           <li><a href="#" class="menu-link">Services</a></li>
-                           <li><a href="#" class="menu-link">Emploi</a></li>
-                           <li><a href="#" class="menu-link">Services</a></li>
-                           <li><a href="#" class="menu-link">Contact</a></li>
-                       </div>
-                       <div class="job-settings">
-                           <li class="mr-2"><a class="btn btn-danger" href="#">Poster une nouvelle offre</a></li>
-                           <li><a class="btn btn-info" href="#">Créer une alerte</a></li>
-                       </div>
-                   </ul>
-                   <ul class="mobile-top-nav">
-                      <li>
-                          <a href="#"> <img src="img/logo.png" class="mobile-logo" alt="LOGO"></a>
-                      </li>
-                       <li>
-                           <a href="#" class="alert-icon"><i class="fa fa-bell"></i></a>
-                       </li>
+        <div class="header-nav sticky">
+            <div class="container">
+                <ul class="nav">
+                    <div class="desktop-logo">
+                        <li><a href="#"><img src="img/logo.png" alt="LOGO"></a></li>
+                    </div>
+                    <div class="nav-items">
+                        <li><a href="#" class="menu-link active">Accueil</a></li>
+                        <li><a href="#" class="menu-link">Services</a></li>
+                        <li><a href="pages/jobs-items.html" class="menu-link">Emploi</a></li>
+                        <li><a href="#" class="menu-link">Services</a></li>
+                        <li><a href="#" class="menu-link">Contact</a></li>
+                    </div>
+                    <div class="job-settings">
+                        <li class="mr-2"><a class="btn btn-danger" href="#">Poster une nouvelle offre</a></li>
+                        <li><a class="btn btn-info" href="#">Créer une alerte</a></li>
+                    </div>
+                </ul>
+                <ul class="mobile-top-nav">
+                    <li>
+                        <a href="#"> <img src="img/logo.png" class="mobile-logo" alt="LOGO"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="alert-icon"><i class="fa fa-bell"></i></a>
+                    </li>
 
-                   </ul>
-                   <ul class="side-nav" id="mobile-menu">
-                       <li><a href="#">Sass</a></li>
-                       <li><a href="#">Components</a></li>
-                       <li><a href="#">Javascript</a></li>
-                       <li><a href="#">Mobile</a></li>
-                   </ul>
-               </div>
-           </div>
+                </ul>
+                <ul class="side-nav" id="mobile-menu">
+                    <li><a href="#">Sass</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">Mobile</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <div class="mobile-nav">
-        <ul class="menu">
-            <li class="menu-item">
-                <a href="#" class="menu-link active">
-                    <i class="material-icons">home</i>
-                    Accueil
-                </a>
-             </li>
-            <li class="menu-item">
-                <a href="#" class="menu-link button-collapse" data-activates="mobile-menu">
-                    <i class="material-icons">menu</i>
-                    Services
-                </a>
-             </li>
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <i class="material-icons">search</i>
-                    Rechercher
-                </a> 
-            </li>
-            <li class="menu-item">
-                <a href="#" class="menu-link">
-                    <i class="material-icons">work</i>
-                    Emploi
-                </a> 
-            </li>
-        </ul>
-    </nav>
-    </div>
-
     <div class="main">
         <section>
             <div class="banner image-cover">
                 <div class="banner-text row">
                     <div class="container">
                         <div class="text-center text-white mb-7 col-lg-12">
-                             <h1 class="mb-1">Trouvez le meilleur emploi pour votre avenir</h1>
+                            <h1 class="mb-1">Trouvez le meilleur emploi pour votre avenir</h1>
                             <p>
                                 C'est un fait établi depuis longtemps qu'un lecteur sera distrait par le lisible.
                             </p>
                         </div>
                         <div class="search-form col-lg-12">
                             <form action="#" class="form">
-                               <div class="row">
-                                   <div class="form-group col-lg-3 col-sm-12 mb-3">
-                                       <input type="text" class="form-control input-lg" placeholder="Recherche de travail">
-                                   </div>
-                                   <div class="form-group col-lg-3 col-sm-12 mb-3">
-                                       <input type="text" class="form-control input-lg" placeholder="Sélectionnez l'emplacement">
-                                   </div>
-                                   <div class="form-group col-lg-3 col-sm-12 mb-3">
-                                       <select class="form-control input-lg select2">
-                                           <option value=""></option>
-                                       </select>
-                                   </div>
-                                   <div class="form-group col-lg-3 col-sm-12 mb-3">
-                                       <button class="btn btn-block btn-danger btn-lg">
-                                           <i class="fa fa-search mr-1"></i> Rechercher
-                                       </button>
-                                   </div>
-                               </div>
+                                <div class="row">
+                                    <div class="form-group col-lg-3 col-sm-12 mb-3">
+                                        <input type="text" class="form-control input-lg"
+                                            placeholder="Recherche de travail">
+                                    </div>
+                                    <div class="form-group col-lg-3 col-sm-12 mb-3">
+                                        <input type="text" class="form-control input-lg"
+                                            placeholder="Sélectionnez l'emplacement">
+                                    </div>
+                                    <div class="form-group col-lg-3 col-sm-12 mb-3">
+                                        <select class="form-control input-lg select2">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-3 col-sm-12 mb-3">
+                                        <button class="btn btn-block btn-danger btn-lg">
+                                            <i class="fa fa-search mr-1"></i> Rechercher
+                                        </button>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
-                 <div class="header-slider-img">
+                <div class="header-slider-img">
                     <div class="container owl-carousel owl-theme owl-loaded">
                         <div class="service-container owl-stage-outer">
                             <div class="owl-stage row">
                                 <div class="owl-item mb-3">
-                                        <div class="item">
-                                            <div class="card">
-                                                <div class="card-body p-3">
-                                                    <div class="cat d-flex">
-                                                        <div class="cat-img mr-4 bg-primary-transparent p-3 border-round">
-                                                            <i class="fa fa-briefcase"></i>
-                                                        </div>
-                                                        <div class="cat-desc text-left">
-                                                            <h5 class="mb-3">IT Software</h5>
-                                                            <small>
-                                                                affadadadadad
-                                                            </small>
-                                                        </div>
+                                    <div class="item">
+                                        <div class="card">
+                                            <div class="card-body p-3">
+                                                <div class="cat d-flex">
+                                                    <div class="cat-img mr-4 bg-primary-transparent p-3 border-round">
+                                                        <i class="fa fa-briefcase"></i>
+                                                    </div>
+                                                    <div class="cat-desc text-left">
+                                                        <h5 class="mb-3">IT Software</h5>
+                                                        <small>
+                                                            affadadadadad
+                                                        </small>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
                                 <div class="owl-item mb-3">
-                                        <div class="item">
-                                            <div class="card">
-                                                <div class="card-body p-3">
-                                                    <div class="cat d-flex">
-                                                        <div class="cat-img mr-4 bg-primary-transparent p-3 border-round">
-                                                            <i class="fa fa-briefcase"></i>
-                                                        </div>
-                                                        <div class="cat-desc text-left">
-                                                            <h5 class="mb-3">IT Software</h5>
-                                                            <small>
-                                                                affadadadadad
-                                                            </small>
-                                                        </div>
+                                    <div class="item">
+                                        <div class="card">
+                                            <div class="card-body p-3">
+                                                <div class="cat d-flex">
+                                                    <div class="cat-img mr-4 bg-primary-transparent p-3 border-round">
+                                                        <i class="fa fa-briefcase"></i>
+                                                    </div>
+                                                    <div class="cat-desc text-left">
+                                                        <h5 class="mb-3">IT Software</h5>
+                                                        <small>
+                                                            affadadadadad
+                                                        </small>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
                                 <div class="owl-item mb-3">
-                                        <div class="item">
-                                            <div class="card">
-                                                <div class="card-body p-3">
-                                                    <div class="cat d-flex">
-                                                        <div class="cat-img mr-4 bg-primary-transparent p-3 border-round">
-                                                            <i class="fa fa-briefcase"></i>
-                                                        </div>
-                                                        <div class="cat-desc text-left">
-                                                            <h5 class="mb-3">IT Software</h5>
-                                                            <small>
-                                                                affadadadadad
-                                                            </small>
-                                                        </div>
+                                    <div class="item">
+                                        <div class="card">
+                                            <div class="card-body p-3">
+                                                <div class="cat d-flex">
+                                                    <div class="cat-img mr-4 bg-primary-transparent p-3 border-round">
+                                                        <i class="fa fa-briefcase"></i>
+                                                    </div>
+                                                    <div class="cat-desc text-left">
+                                                        <h5 class="mb-3">IT Software</h5>
+                                                        <small>
+                                                            affadadadadad
+                                                        </small>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
                                 <div class="owl-item mb-3">
-                                        <div class="item">
-                                            <div class="card">
-                                                <div class="card-body p-3">
-                                                    <div class="cat d-flex">
-                                                        <div class="cat-img mr-4 bg-primary-transparent p-3 border-round">
-                                                            <i class="fa fa-briefcase"></i>
-                                                        </div>
-                                                        <div class="cat-desc text-left">
-                                                            <h5 class="mb-3">IT Software</h5>
-                                                            <small>
-                                                                affadadadadad
-                                                            </small>
-                                                        </div>
+                                    <div class="item">
+                                        <div class="card">
+                                            <div class="card-body p-3">
+                                                <div class="cat d-flex">
+                                                    <div class="cat-img mr-4 bg-primary-transparent p-3 border-round">
+                                                        <i class="fa fa-briefcase"></i>
+                                                    </div>
+                                                    <div class="cat-desc text-left">
+                                                        <h5 class="mb-3">IT Software</h5>
+                                                        <small>
+                                                            affadadadadad
+                                                        </small>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
                                 <div class="owl-item mb-3">
-                                        <div class="item">
-                                            <div class="card">
-                                                <div class="card-body p-3">
-                                                    <div class="cat d-flex">
-                                                        <div class="cat-img mr-4 bg-primary-transparent p-3 border-round">
-                                                            <i class="fa fa-briefcase"></i>
-                                                        </div>
-                                                        <div class="cat-desc text-left">
-                                                            <h5 class="mb-3">IT Software</h5>
-                                                            <small>
-                                                                affadadadadad
-                                                            </small>
-                                                        </div>
+                                    <div class="item">
+                                        <div class="card">
+                                            <div class="card-body p-3">
+                                                <div class="cat d-flex">
+                                                    <div class="cat-img mr-4 bg-primary-transparent p-3 border-round">
+                                                        <i class="fa fa-briefcase"></i>
+                                                    </div>
+                                                    <div class="cat-desc text-left">
+                                                        <h5 class="mb-3">IT Software</h5>
+                                                        <small>
+                                                            affadadadadad
+                                                        </small>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -461,7 +435,7 @@
                                 </div>
                                 <div class="item-all-text mt-3">
                                     <h5 class="mb-0 text-body">
-                                       Itérime
+                                        Itérime
                                     </h5>
                                 </div>
                             </div>
@@ -474,7 +448,7 @@
                                 </div>
                                 <div class="item-all-text mt-3">
                                     <h5 class="mb-0 text-body">
-                                       Temps Partiel
+                                        Temps Partiel
                                     </h5>
                                 </div>
                             </div>
@@ -498,218 +472,506 @@
         </section>
 
         <section class="sptb feature-employees bg-white">
-                <div class="container">
-                        <div class="section-title center-block text-center">
-                            <h1>Employeurs en vedette</h1>
-                            <p>Mauris ut cursus nunc. Morbi eleifend, ligula at consectetur vehicula</p>
-                        </div>
-                        <div class="owl-carousel owl-carousel owl-carousel-icons2 owl-loaded owl-drag">
-                                <div class="owl-stage-outer">
-                                        <div class="owl-stage">
-                                                <div class="owl-item col-lg-3">
-                                                        <div class="item">
-                                                                <div class="card mb-0">
-                                                                        <div class="card-body">
-                                                                            <img src="img/employee.png" width="128" height="128"
-                                                                             class="avatar border-round avatar-xxl mx-auto" alt="EMPLOYEE">
-                                                                            <div class="item-card2">
-                                                                                <div class="item-card2-desc text-center">
-                                                                                    <div class="item-card2-text mt-3"> 
-                                                                                        <a href="#" class="text-dark">
-                                                                                            <h4 class="font-weight-bold">Catherina Shoaf</h4>
-                                                                                        </a>
-                                                                                     </div>
-                                                                                    <p class="">Php Developer (6 Yrs Exp)</p>
-                                                                                    <a href="#" class="btn btn-white btn-sm">
-                                                                                        Voir   Details
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="card-footer">
-                                                                            <div class="filter-icons text-center"> 
-                                                                                <a href="#" class="border text-primary p-0">
-                                                                                    <i class="fa fa-phone"></i>
-                                                                                </a> 
-                                                                                <a href="#" class="border text-primary p-0">
-                                                                                    <i class="fa fa-envelope"></i>
-                                                                                </a>
-                                                                                <a href="#" class="border text-primary p-0">
-                                                                                    <i class="fa fa-comment"></i>
-                                                                                </a>
-                                                                             </div>
-                                                                        </div>
-                                                                </div>
-                                                        </div>
-                                                </div>  
-                                                <div class="owl-item col-lg-3">
-                                                    <div class="item">
-                                                        <div class="card mb-0">
-                                                            <div class="card-body">
-                                                                <img src="img/employee.png" width="128" height="128" class="avatar border-round avatar-xxl mx-auto"
-                                                                    alt="EMPLOYEE">
-                                                                <div class="item-card2">
-                                                                    <div class="item-card2-desc text-center">
-                                                                        <div class="item-card2-text mt-3">
-                                                                            <a href="#" class="text-dark">
-                                                                                <h4 class="font-weight-bold">Catherina Shoaf</h4>
-                                                                            </a>
-                                                                        </div>
-                                                                        <p class="">Php Developer (6 Yrs Exp)</p>
-                                                                        <a href="#" class="btn btn-white btn-sm">
-                                                                            Voir Details
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-footer">
-                                                                <div class="filter-icons text-center">
-                                                                    <a href="#" class="border text-primary p-0">
-                                                                        <i class="fa fa-phone"></i>
-                                                                    </a>
-                                                                    <a href="#" class="border text-primary p-0">
-                                                                        <i class="fa fa-envelope"></i>
-                                                                    </a>
-                                                                    <a href="#" class="border text-primary p-0">
-                                                                        <i class="fa fa-comment"></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item col-lg-3">
-                                                    <div class="item">
-                                                        <div class="card mb-0">
-                                                            <div class="card-body">
-                                                                <img src="img/employee.png" width="128" height="128" class="avatar border-round avatar-xxl mx-auto"
-                                                                    alt="EMPLOYEE">
-                                                                <div class="item-card2">
-                                                                    <div class="item-card2-desc text-center">
-                                                                        <div class="item-card2-text mt-3">
-                                                                            <a href="#" class="text-dark">
-                                                                                <h4 class="font-weight-bold">Catherina Shoaf</h4>
-                                                                            </a>
-                                                                        </div>
-                                                                        <p class="">Php Developer (6 Yrs Exp)</p>
-                                                                        <a href="#" class="btn btn-white btn-sm">
-                                                                            Voir Details
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-footer">
-                                                                <div class="filter-icons text-center">
-                                                                    <a href="#" class="border text-primary p-0">
-                                                                        <i class="fa fa-phone"></i>
-                                                                    </a>
-                                                                    <a href="#" class="border text-primary p-0">
-                                                                        <i class="fa fa-envelope"></i>
-                                                                    </a>
-                                                                    <a href="#" class="border text-primary p-0">
-                                                                        <i class="fa fa-comment"></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item col-lg-3">
-                                                    <div class="item">
-                                                        <div class="card mb-0">
-                                                            <div class="card-body">
-                                                                <img src="img/employee.png" width="128" height="128" class="avatar border-round avatar-xxl mx-auto"
-                                                                    alt="EMPLOYEE">
-                                                                <div class="item-card2">
-                                                                    <div class="item-card2-desc text-center">
-                                                                        <div class="item-card2-text mt-3">
-                                                                            <a href="#" class="text-dark">
-                                                                                <h4 class="font-weight-bold">Catherina Shoaf</h4>
-                                                                            </a>
-                                                                        </div>
-                                                                        <p class="">Php Developer (6 Yrs Exp)</p>
-                                                                        <a href="#" class="btn btn-white btn-sm">
-                                                                            Voir Details
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-footer">
-                                                                <div class="filter-icons text-center">
-                                                                    <a href="#" class="border text-primary p-0">
-                                                                        <i class="fa fa-phone"></i>
-                                                                    </a>
-                                                                    <a href="#" class="border text-primary p-0">
-                                                                        <i class="fa fa-envelope"></i>
-                                                                    </a>
-                                                                    <a href="#" class="border text-primary p-0">
-                                                                        <i class="fa fa-comment"></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
+            <div class="container">
+                <div class="section-title center-block text-center">
+                    <h1>Employeurs en vedette</h1>
+                    <p>Mauris ut cursus nunc. Morbi eleifend, ligula at consectetur vehicula</p>
                 </div>
-        </section>
-
-        <section class="sptb border-top bg-white">
-                <div class="container">
-                        <div class="row no-gutters">
-                                <div class="col-lg-6">
-                                        <div class="bg-light p-0 border-transparent">
-                                            <div class="card-body text-center">
-                                                    <div class="bg-white icon-bg icon-service text-purple">
-                                                            <img src="img/find.svg" alt="FIND JOB">
+                <div class="owl-carousel owl-carousel owl-carousel-icons2 owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <div class="owl-item col-lg-3">
+                                <div class="item">
+                                    <div class="card mb-0">
+                                        <div class="card-body">
+                                            <img src="img/employee.png" width="128" height="128"
+                                                class="avatar border-round avatar-xxl mx-auto" alt="EMPLOYEE">
+                                            <div class="item-card2">
+                                                <div class="item-card2-desc text-center">
+                                                    <div class="item-card2-text mt-3">
+                                                        <a href="#" class="text-dark">
+                                                            <h4 class="font-weight-bold">Catherina Shoaf</h4>
+                                                        </a>
                                                     </div>
-                                                    <h6 class="card-title fs-18 mb-4">
-                                                            Voulez-vous trouver un emploi ?
-                                                    </h6>
-                                                    <p>
-                                                        it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                                                        default model text
-                                                    </p>
-                                                    <a href="#" class="btn btn-primary text-white">Trouver un emploi</a>
+                                                    <p class="">Php Developer (6 Yrs Exp)</p>
+                                                    <a href="#" class="btn btn-white btn-sm">
+                                                        Voir Details
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="bg-white p-0 mt-5 mt-md-0 border">
-                                        <div class="card-body text-center">
-                                            <div class="bg-light icon-bg icon-service text-purple">
-                                                <img src="img/work.svg" alt="FIND JOB">
+                                        <div class="card-footer">
+                                            <div class="filter-icons text-center">
+                                                <a href="#" class="border text-primary p-0">
+                                                    <i class="fa fa-phone"></i>
+                                                </a>
+                                                <a href="#" class="border text-primary p-0">
+                                                    <i class="fa fa-envelope"></i>
+                                                </a>
+                                                <a href="#" class="border text-primary p-0">
+                                                    <i class="fa fa-comment"></i>
+                                                </a>
                                             </div>
-                                            <h6 class="card-title fs-18 mb-4">
-                                                Are You Looking For A Candidate?
-                                            </h6>
-                                            <p>
-                                                it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum
-                                                as their
-                                                default model text
-                                            </p>
-                                            <a href="#" class="btn btn-primary text-white">Find Candidate</a>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="owl-item col-lg-3">
+                                <div class="item">
+                                    <div class="card mb-0">
+                                        <div class="card-body">
+                                            <img src="img/employee.png" width="128" height="128"
+                                                class="avatar border-round avatar-xxl mx-auto" alt="EMPLOYEE">
+                                            <div class="item-card2">
+                                                <div class="item-card2-desc text-center">
+                                                    <div class="item-card2-text mt-3">
+                                                        <a href="#" class="text-dark">
+                                                            <h4 class="font-weight-bold">Catherina Shoaf</h4>
+                                                        </a>
+                                                    </div>
+                                                    <p class="">Php Developer (6 Yrs Exp)</p>
+                                                    <a href="#" class="btn btn-white btn-sm">
+                                                        Voir Details
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="filter-icons text-center">
+                                                <a href="#" class="border text-primary p-0">
+                                                    <i class="fa fa-phone"></i>
+                                                </a>
+                                                <a href="#" class="border text-primary p-0">
+                                                    <i class="fa fa-envelope"></i>
+                                                </a>
+                                                <a href="#" class="border text-primary p-0">
+                                                    <i class="fa fa-comment"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item col-lg-3">
+                                <div class="item">
+                                    <div class="card mb-0">
+                                        <div class="card-body">
+                                            <img src="img/employee.png" width="128" height="128"
+                                                class="avatar border-round avatar-xxl mx-auto" alt="EMPLOYEE">
+                                            <div class="item-card2">
+                                                <div class="item-card2-desc text-center">
+                                                    <div class="item-card2-text mt-3">
+                                                        <a href="#" class="text-dark">
+                                                            <h4 class="font-weight-bold">Catherina Shoaf</h4>
+                                                        </a>
+                                                    </div>
+                                                    <p class="">Php Developer (6 Yrs Exp)</p>
+                                                    <a href="#" class="btn btn-white btn-sm">
+                                                        Voir Details
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="filter-icons text-center">
+                                                <a href="#" class="border text-primary p-0">
+                                                    <i class="fa fa-phone"></i>
+                                                </a>
+                                                <a href="#" class="border text-primary p-0">
+                                                    <i class="fa fa-envelope"></i>
+                                                </a>
+                                                <a href="#" class="border text-primary p-0">
+                                                    <i class="fa fa-comment"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item col-lg-3">
+                                <div class="item">
+                                    <div class="card mb-0">
+                                        <div class="card-body">
+                                            <img src="img/employee.png" width="128" height="128"
+                                                class="avatar border-round avatar-xxl mx-auto" alt="EMPLOYEE">
+                                            <div class="item-card2">
+                                                <div class="item-card2-desc text-center">
+                                                    <div class="item-card2-text mt-3">
+                                                        <a href="#" class="text-dark">
+                                                            <h4 class="font-weight-bold">Catherina Shoaf</h4>
+                                                        </a>
+                                                    </div>
+                                                    <p class="">Php Developer (6 Yrs Exp)</p>
+                                                    <a href="#" class="btn btn-white btn-sm">
+                                                        Voir Details
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="filter-icons text-center">
+                                                <a href="#" class="border text-primary p-0">
+                                                    <i class="fa fa-phone"></i>
+                                                </a>
+                                                <a href="#" class="border text-primary p-0">
+                                                    <i class="fa fa-envelope"></i>
+                                                </a>
+                                                <a href="#" class="border text-primary p-0">
+                                                    <i class="fa fa-comment"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="sptb border-top bg-white">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-lg-6">
+                        <div class="bg-light p-0 border-transparent">
+                            <div class="card-body text-center">
+                                <div class="bg-white icon-bg icon-service text-purple">
+                                    <img src="img/find.svg" alt="FIND JOB">
+                                </div>
+                                <h6 class="card-title fs-18 mb-4">
+                                    Voulez-vous trouver un emploi ?
+                                </h6>
+                                <p>
+                                    it look like readable English. Many desktop publishing packages and web page editors
+                                    now use Lorem Ipsum as their
+                                    default model text
+                                </p>
+                                <a href="#" class="btn btn-primary text-white">Trouver un emploi</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bg-white p-0 mt-5 mt-md-0 border">
+                            <div class="card-body text-center">
+                                <div class="bg-light icon-bg icon-service text-purple">
+                                    <img src="img/work.svg" alt="FIND JOB">
+                                </div>
+                                <h6 class="card-title fs-18 mb-4">
+                                    Êtes-vous à la recherche d'un candidat?
+                                </h6>
+                                <p>
+                                    it look like readable English. Many desktop publishing packages and web page editors
+                                    now use Lorem Ipsum
+                                    as their
+                                    default model text
+                                </p>
+                                <a href="#" class="btn btn-primary text-white">Find Candidate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="sptb news">
-                <div class="container">
-                        <div class="section-title center-block text-center">
-                            <h1>Actualités</h1>
-                            <p>Mauris ut cursus nunc. Morbi eleifend, ligula at consectetur vehicula</p>
-                        </div>
+            <div class="container">
+                <div class="section-title center-block text-center">
+                    <h1>Actualités</h1>
+                    <p>Mauris ut cursus nunc. Morbi eleifend, ligula at consectetur vehicula</p>
                 </div>
+                <div class="row">
+                    <div class="item col-lg-4 mt-2">
+                        <div class="card mb-0">
+                            <div class="item-card-image">
+                                <a href="#"></a>
+                                <img src="img/news_1.jpg" alt="NEWS IMAGE" class="image-cover">
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="item-card-desc d-flex mb-2">
+                                    <a href="#">
+                                        <i class="fa fa-calendar text-muted mr-2"></i>
+                                        25 Nov. 2020
+                                    </a>
+                                    <a href="#" class="ml-auto">
+                                        <i class="fa fa-comment text-muted mr-2"></i>
+                                        4 commentaires
+                                    </a>
+                                </div>
+                                <a href="#" class="text-dark">
+                                    <h4 class="font-weight-semibold">Excepteur occaecat cupidatat</h4>
+                                </a>
+                                <p>Ut enim ad minima veniam, quis exercitationem, enim ad minima veniam, quis nostrum
+                                    exercitationem </p>
+                                <div class="d-flex align-items-center pt-2 mt-auto">
+                                    <img src="img/15.jpg" alt="" class="avatar avatar-md mr-2 border-round">
+                                    <div>
+                                        <a href="#" class="text-default">Mr KE</a>
+                                        <small class="d-block text-muted">il y 2 jours</small>
+                                    </div>
+                                    <div class="ml-auto text-muted">
+                                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3">
+                                            <i class="fa fa-heart mr-1"></i>
+                                        </a>
+                                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3">
+                                            <i class="fa fa-thumbs-up mr-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-lg-4 mt-2">
+                        <div class="card mb-0">
+                            <div class="item-card-image">
+                                <a href="#"></a>
+                                <img src="img/news_1.jpg" alt="NEWS IMAGE" class="image-cover">
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="item-card-desc d-flex mb-2">
+                                    <a href="#">
+                                        <i class="fa fa-calendar text-muted mr-2"></i>
+                                        25 Nov. 2020
+                                    </a>
+                                    <a href="#" class="ml-auto">
+                                        <i class="fa fa-comment text-muted mr-2"></i>
+                                        4 commentaires
+                                    </a>
+                                </div>
+                                <a href="#" class="text-dark">
+                                    <h4 class="font-weight-semibold">Excepteur occaecat cupidatat</h4>
+                                </a>
+                                <p>Ut enim ad minima veniam, quis exercitationem, enim ad minima veniam, quis nostrum
+                                    exercitationem </p>
+                                <div class="d-flex align-items-center pt-2 mt-auto">
+                                    <img src="img/15.jpg" alt="" class="avatar avatar-md mr-2 border-round">
+                                    <div>
+                                        <a href="#" class="text-default">Mr KE</a>
+                                        <small class="d-block text-muted">il y 2 jours</small>
+                                    </div>
+                                    <div class="ml-auto text-muted">
+                                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3">
+                                            <i class="fa fa-heart mr-1"></i>
+                                        </a>
+                                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3">
+                                            <i class="fa fa-thumbs-up mr-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-lg-4 mt-2">
+                        <div class="card mb-0">
+                            <div class="item-card-image">
+                                <a href="#"></a>
+                                <img src="img/news_1.jpg" alt="NEWS IMAGE" class="image-cover">
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="item-card-desc d-flex mb-2">
+                                    <a href="#">
+                                        <i class="fa fa-calendar text-muted mr-2"></i>
+                                        25 Nov. 2020
+                                    </a>
+                                    <a href="#" class="ml-auto">
+                                        <i class="fa fa-comment text-muted mr-2"></i>
+                                        4 commentaires
+                                    </a>
+                                </div>
+                                <a href="#" class="text-dark">
+                                    <h4 class="font-weight-semibold">Excepteur occaecat cupidatat</h4>
+                                </a>
+                                <p>Ut enim ad minima veniam, quis exercitationem, enim ad minima veniam, quis nostrum
+                                    exercitationem </p>
+                                <div class="d-flex align-items-center pt-2 mt-auto">
+                                    <img src="img/15.jpg" alt="" class="avatar avatar-md mr-2 border-round">
+                                    <div>
+                                        <a href="#" class="text-default">Mr KE</a>
+                                        <small class="d-block text-muted">il y 2 jours</small>
+                                    </div>
+                                    <div class="ml-auto text-muted">
+                                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3">
+                                            <i class="fa fa-heart mr-1"></i>
+                                        </a>
+                                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3">
+                                            <i class="fa fa-thumbs-up mr-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="showmore-button-inner more">Voir plus</a>
+                </div>
+            </div>
         </section>
 
-    </div>
+        <section class="sptb downloads bg-white">
+            <div class="container">
+                <div class="section-title center-block text-center">
+                    <h1>Téléchargements</h1>
+                    <p>Mauris ut cursus nunc. Morbi eleifend, ligula at consectetur vehicula</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center text-wrap">
+                            <div class="btn-list">
+                                <a href="#" class="btn btn-primary btn-lg mb-sm-0 mt-1">App Store</a>
+                                <a href="#" class="btn btn-danger btn-lg mb-sm-0 mt-1">Play Store</a>
+                                <a href="#" class="btn btn-info btn-lg mb-sm-0 mt-1">Windows</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section>
+            <footer class="bg-dark text-white image-cover" data-image-src="img/bg-footer.jpg"
+                style="background: url('img/bg-footer.jpg') center center;">
+                <div class="footer-main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <h6 class="mb-2">Emploi & Stages</h6>
+                                <hr class="deep-purple  accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#">Travail à Domicile</a></li>
+                                    <li><a href="#">Temps Partiel</a></li>
+                                    <li><a href="#">Stages</a></li>
+                                    <li><a href="#">Plein Temps</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2">
+                                <h6 class="mb-2">Offres</h6>
+                                <hr class="deep-purple  accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#">Application web</a></li>
+                                    <li><a href="#">Application mobile</a></li>
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Référencement</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-2">
+                                <h6 class="mb-2">Formations</h6>
+                                <hr class="deep-purple  accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#">Programmation</a></li>
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Stratégie SEO</a></li>
+                                    <li><a href="#">Stratégie SAA</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <h6 class="mb-2">Actualités</h6>
+                                <hr class="deep-purple  accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#">Programmation</a></li>
+                                    <li><a href="#">Sport</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Conseils</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <h6 class="mb-2">Souscrire</h6>
+                                <hr class="deep-purple  accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                                <form>
+                                    <div class="form-group w-100">
+                                        <div class="input-group">
+                                            <input type="email" class="form-control" placeholder="E-mail">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn btn-primary">
+                                                    Souscrire
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-white-50 border-top p-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mt-2 mb-2 text-left">
+                                Copyright &copy; 2020
+                                <a href="#" class="text-white fs-14">higtech</a>
+                                Designed By <a href="#" class="text-white fs-14">Mr KE</a>
+                                Tous droits réservés.
+                            </div>
+                            <div class="col-lg-4 ml-auto mb-2 mt-2 d-none d-lg-block">
+                                <ul class="social mb-0">
+                                    <li><a href="#" class="social-icon"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-white p-0 border-top">
+                    <div class="container">
+                        <div class="p-2 text-center footer-links"> 
+                            <a href="#" class="btn btn-link">How It Works</a>
+                            <a href="#" class="btn btn-link">About Us</a> 
+                            <a href="#" class="btn btn-link">Pricing</a>
+                            <a href="#" class="btn btn-link">Ads Categories</a>
+                            <a href="#" class="btn btn-link">Privacy  Policy</a>
+                            <a href="#" class="btn btn-link">Terms Of Conditions</a> 
+                            <a href="#" class="btn btn-link">Blog</a> 
+                            <a href="#" class="btn btn-link">Contact Us</a> 
+                            <a href="#" class="btn btn-link">Premium Ad</a> 
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+    <div class="mobile-nav">
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="#" class="menu-link active">
+                    <i class="material-icons">home</i>
+                    Accueil
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link button-collapse" data-activates="mobile-menu">
+                    <i class="material-icons">menu</i>
+                    Services
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                    <i class="material-icons">search</i>
+                    Rechercher
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                    <i class="material-icons">work</i>
+                    Emploi
+                </a>
+            </li>
+        </ul>
+        </nav>
+    </div>
+    
+    <a href="#" id="notification">
+        <span class="notification-text">Créer une alerte emploi</span>
+        <i class="fa fa-bell"></i>
+    </a>
+
+    <a href="#" id="back-to-top"><i class="fa fa-arrow-up"></i></a>
 
     <script src="js/app.js"></script>
+    <script src="js/sticky.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mr KE">
+    <title>JobPortal</title>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+        </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="OwlCarousel2/dist/assets/owl.carousel.css">
+    <script src="../OwlCarousel2/dist/owl.carousel.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body>
+    <div id="global-loader">
+        <img src="../img/loader.svg" alt="LOADER" class="loader-img">
+    </div>
+    <header class="header-main">
+        <div class="top-bar">
+            <div class="container">
+
+                <div class="desktop-topbar-1">
+                    <ul class="socials">
+                        <li class="li">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="desktop-topbar-1 top-bar-right">
+                    <ul class="customs">
+                        <li>
+                            <a href="#"><i class="fa fa-user mr-1"></i> S'inscrire</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-lock mr-1"></i> Se connecter</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-tachometer-alt mr-1"></i> Tableau de bord</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container top-bar-mobile">
+                <ul class="top-bar-mobile-left">
+                    <li class="mr-2">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="mr-2">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="mr-2">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+                <ul class="top-bar-mobile-right">
+                    <li class="mr-2"><a href="#"><i class="fa fa-user"></i></a></li>
+                    <li class="mr-2"><a href="#"><i class="fa fa-lock"></i></a></li>
+                    <li><a href="#"><i class="fa fa-tachometer-alt"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-nav sticky">
+            <div class="container">
+                <ul class="nav">
+                    <div class="desktop-logo">
+                        <li><a href="#"><img src="../img/logo.png" alt="LOGO"></a></li>
+                    </div>
+                    <div class="nav-items">
+                        <li><a href="#" class="menu-link active">Accueil</a></li>
+                        <li><a href="#" class="menu-link">Services</a></li>
+                        <li><a href="../pages/jobs-items.html" class="menu-link">Emploi</a></li>
+                        <li><a href="#" class="menu-link">Services</a></li>
+                        <li><a href="#" class="menu-link">Contact</a></li>
+                    </div>
+                    <div class="job-settings">
+                        <li class="mr-2"><a class="btn btn-danger" href="#">Poster une nouvelle offre</a></li>
+                        <li><a class="btn btn-info" href="#">Créer une alerte</a></li>
+                    </div>
+                </ul>
+                <ul class="mobile-top-nav">
+                    <li>
+                        <a href="#"> <img src="../img/logo.png" class="mobile-logo" alt="LOGO"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="alert-icon"><i class="fa fa-bell"></i></a>
+                    </li>
+
+                </ul>
+                <ul class="side-nav" id="mobile-menu">
+                    <li><a href="#">Sass</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">Mobile</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <section>
+            <div class="banner image-cover sptb-1">
+                <div class="banner-text row">
+                    <div class="container">
+                        <div class="text-center text-white mb-7 col-lg-12">
+                            <h1 class="mb-1">
+                                <span class="font-weight-bold">200</span>
+                                Emplois disponibles
+                            </h1>
+                        </div>
+                        <div class="search-form col-lg-12">
+                            <form action="#" class="form">
+                                <div class="row">
+                                    <div class="form-group col-lg-3 col-sm-12 mb-3">
+                                        <input type="text" class="form-control input-lg"
+                                            placeholder="Recherche de travail">
+                                    </div>
+                                    <div class="form-group col-lg-3 col-sm-12 mb-3">
+                                        <input type="text" class="form-control input-lg"
+                                            placeholder="Sélectionnez l'emplacement">
+                                    </div>
+                                    <div class="form-group col-lg-3 col-sm-12 mb-3">
+                                        <select class="form-control input-lg select2">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-3 col-sm-12 mb-3">
+                                        <button class="btn btn-block btn-danger btn-lg">
+                                            <i class="fa fa-search mr-1"></i> Rechercher
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="bg-white border-bottom">
+            <div class="container">
+                <div class="page-header">
+                    <h4 class="page-title">Liste Emploi</h4>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><a href="#">Liste-emploi</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>      
+    </div>
+    <section class="sptb">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="p-6 bg-white item2-gl-nav d-flex">
+                        <h6 class="mb-0 mt-3">
+                            Montrant <b>1 à 10</b>
+                            sur 30 Entrées
+                        </h6>
+                        <ul class="nav item2-gl-menu ml-auto mt-1">
+                            <li class="show active"><a href="#">
+                                <i class="fa fa-list"></i>
+                            </a></li>
+                            <li class="show"><a href="#">
+                                <i class="fas fa-th"></i>
+                            </a></li>
+                        </ul>
+                        <div class="d-flex">
+                            <label class="mr-2 mt-2 mb-sm-1">Trier par: </label>
+                            <select name="item" id="" class="form-control w70">
+                                <option value="Le plus récent d'abord">Le plus récent d'abord</option>
+                                <option value="Populaire">Populaire</option>
+                                <option value="Populaire">Populaire</option>
+                                <option value="Mieux payé">Mieux payé</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tap-pane active">
+                            <div class="card overflow-hidden br-0">
+                                <div class="d-md-flex">
+                                    <div class="p-0 m-0 item-card9 img">
+                                        <div class="item-card9-imgs">
+                                            <a href="#"></a>
+                                            <img src="../img/img1.jpg" alt="JOB IMAGE">
+                                        </div>
+                                    </div>
+                                    <div class="card overflow-hidden border-0 box-shadow-0 border-left br-0 mb-0">
+                                        <div class="card-body pt-0 pt-md-5">
+                                            <div class="item-card9">
+                                                <a href="#" class="text-dark">
+                                                    <h4 class="font-weight-semibold mt-1">
+                                                        Emplois de cadre RH
+                                                    </h4>
+                                                </a>
+                                                <div class="mt-2 mb-2">
+                                                    <a href="#" class="mr-4">
+                                                        <span>
+                                                            <i class="fa fa-building text-muted mr-1"></i>Rencontre Pro
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" class="mr-4">
+                                                        <span>
+                                                            <i class="fa fa-map-maker text-muted mr-1"></i>Abidjan
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" class="mr-4">
+                                                        <span>
+                                                            <i class="fa fa-usd text-muted mr-1"></i>500 000
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" class="mr-4">
+                                                        <span>
+                                                            <i class="fa fa-clock text-muted mr-1"></i>plein temps
+                                                        </span>
+                                                    </a>
+
+                                                    <a href="#" class="mr-4">
+                                                        <span>
+                                                            <i class="fa fa-briefcase text-muted mr-1"></i>2 ans Exp
+                                                        </span>
+                                                    </a>
+                                                    <p class="mb-0">
+                                                        D'un autre côté, nous dénonçons avec une juste indignation et une aversion pour les hommes tellement séduits et démoralisés par les charmes de plaisir du moment
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer pt-3 pb-3">
+                                                    <div class="item-card9-footer d-flex">
+                                                        <div class="d-flex"></div>
+                                                        <div class="ml-auto">
+                                                            <a href="#" class="mr-3">
+                                                                <i class="fa fa-user text-muted mr-1"></i>
+                                                                HR/Admin
+                                                            </a>  
+                                                            <a href="#" class="mr-3">
+                                                                <i class="fa fa-check-circle text-success mr-1"></i>
+                                                                Téléphone vérifié
+                                                            </a> 
+                                                            <a href="job-item.html" class="btn btn-primary mt-3 mt-sm-0">Postuler</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center-block text-center">
+                        <ul class="pagination mb-5 mb-lg-0">
+                            <li class="page-item page-prev disabled">
+                                <a href="#" class="page-link" tabindex="-1">Précédent</a>
+                            </li>
+                            <li class="page-item active">
+                                <a href="#" class="page-link">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="#" class="page-link">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="#" class="page-link">3</a>
+                            </li>
+                            <li class="page-item page-next">
+                                <a href="#" class="page-link">Suivant</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input type="text" class="form-control br-tl-3 br-bl-3" placeholder="Chercher">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary br-tr-3 br-br-3">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Catégories</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="closed" id="container">
+                                <div class="job-filter-checkboxs">
+                                    <label class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" name="checkbox" value="opt1">
+                                        <span class="custom-control-label">
+                                            <a href="#" class="text-dark">
+                                                Operateur d'ordinateur
+                                                <span class="label label-secondary float-right">
+                                                    25
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </label>
+                                    <label class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" name="checkbox" value="opt1">
+                                        <span class="custom-control-label">
+                                            <a href="#" class="text-dark">
+                                                Operateur d'ordinateur
+                                                <span class="label label-secondary float-right">
+                                                    25
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </label>
+                                    <label class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" name="checkbox" value="opt1">
+                                        <span class="custom-control-label">
+                                            <a href="#" class="text-dark">
+                                                Operateur d'ordinateur
+                                                <span class="label label-secondary float-right">
+                                                    25
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </label>
+                                    <label class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" name="checkbox" value="opt1">
+                                        <span class="custom-control-label">
+                                            <a href="#" class="text-dark">
+                                                Operateur d'ordinateur
+                                                <span class="label label-secondary float-right">
+                                                    25
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </label>
+                                    <label class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" name="checkbox" value="opt1">
+                                        <span class="custom-control-label">
+                                            <a href="#" class="text-dark">
+                                                Operateur d'ordinateur
+                                                <span class="label label-secondary float-right">
+                                                    25
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="showmore-button">
+                                <div class="showmore-button-inner more">
+                                    Montre plus
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-header border-top">
+                            <h3 class="card-title">Type d'emploi</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="job-filter-checkboxs">
+                                <label class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input"  value="opt2">
+                                    <span class="custom-control-label">A temps partiel</span>
+                                </label>
+                                <label class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input"  value="opt2">
+                                    <span class="custom-control-label">A plein temps</span>
+                                </label>
+
+                                <label class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input"  value="opt2">
+                                    <span class="custom-control-label">Dépuis la maison</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-warning btn-block">
+                                Appliquer le filtre
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card mb-0">
+                        <div class="card-header">
+                            <h3 class="card-title">Partager</h3>
+                        </div>
+                        <div class="card-body product-filter-desc">
+                            <div class="product-filter-icons text-center">
+                                <a href="#" class="facebook-bg">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="twitter-bg">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="google-bg">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="mobile-nav">
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="#" class="menu-link active">
+                    <i class="material-icons">home</i>
+                    Accueil
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link button-collapse" data-activates="mobile-menu">
+                    <i class="material-icons">menu</i>
+                    Services
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                    <i class="material-icons">search</i>
+                    Rechercher
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                    <i class="material-icons">work</i>
+                    Emploi
+                </a>
+            </li>
+        </ul>
+        </nav>
+    </div>
+    
+    <a href="#" id="notification">
+        <span class="notification-text">Créer une alerte emploi</span>
+        <i class="fa fa-bell"></i>
+    </a>
+
+    <a href="#" id="back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/sticky.js"></script>
+</body>
+
+</html>

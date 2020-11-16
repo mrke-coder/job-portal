@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mr KE">
+    <title>JobPortal</title>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+        </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="OwlCarousel2/dist/assets/owl.carousel.css">
+    <script src="../../../OwlCarousel2/dist/owl.carousel.js"></script>
+    <link rel="stylesheet" href="../../../fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../../../css/app.css">
+</head>
+
+<body>
+    <div id="global-loader">
+        <img src="../../../img/loader.svg" alt="LOADER" class="loader-img">
+    </div>
+    <header class="header-main">
+        <div class="top-bar">
+            <div class="container">
+
+                <div class="desktop-topbar-1">
+                    <ul class="socials">
+                        <li class="li">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="li">
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="desktop-topbar-1 top-bar-right">
+                    <ul class="customs">
+                        <li>
+                            <a href="#"><i class="fa fa-user mr-1"></i> S'inscrire</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-lock mr-1"></i> Se connecter</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-tachometer-alt mr-1"></i> Tableau de bord</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container top-bar-mobile">
+                <ul class="top-bar-mobile-left">
+                    <li class="mr-2">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="mr-2">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="mr-2">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+                <ul class="top-bar-mobile-right">
+                    <li class="mr-2"><a href="#"><i class="fa fa-user"></i></a></li>
+                    <li class="mr-2"><a href="#"><i class="fa fa-lock"></i></a></li>
+                    <li><a href="#"><i class="fa fa-tachometer-alt"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-nav sticky">
+            <div class="container">
+                <ul class="nav">
+                    <div class="desktop-logo">
+                        <li><a href="#"><img src="../../../img/logo.png" alt="LOGO"></a></li>
+                    </div>
+                    <div class="nav-items">
+                        <li><a href="#" class="menu-link active">Accueil</a></li>
+                        <li><a href="#" class="menu-link">Services</a></li>
+                        <li><a href="../../../pages/jobs-items.html" class="menu-link">Emploi</a></li>
+                        <li><a href="#" class="menu-link">Services</a></li>
+                        <li><a href="#" class="menu-link">Contact</a></li>
+                    </div>
+                    <div class="job-settings">
+                        <li class="mr-2"><a class="btn btn-danger" href="#">Poster une nouvelle offre</a></li>
+                        <li><a class="btn btn-info" href="#">Créer une alerte</a></li>
+                    </div>
+                </ul>
+                <ul class="mobile-top-nav">
+                    <li>
+                        <a href="#"> <img src="../../../img/logo.png" class="mobile-logo" alt="LOGO"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="alert-icon"><i class="fa fa-bell"></i></a>
+                    </li>
+
+                </ul>
+                <ul class="side-nav" id="mobile-menu">
+                    <li><a href="#">Sass</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">Mobile</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <section>
+            <div class="banner image-cover sptb-1">
+                <div class="banner-text row">
+                    <div class="container">
+                        <div class="text-center text-white mb-7 col-lg-12">
+                            <h1 class="mb-1">
+                                <span class="font-weight-bold">200</span>
+                                Emplois disponibles
+                            </h1>
+                        </div>
+                        <div class="search-form col-lg-12">
+                            <form action="#" class="form">
+                                <div class="row">
+                                    <div class="form-group col-lg-3 col-sm-12 mb-3">
+                                        <input type="text" class="form-control input-lg"
+                                            placeholder="Recherche de travail">
+                                    </div>
+                                    <div class="form-group col-lg-3 col-sm-12 mb-3">
+                                        <input type="text" class="form-control input-lg"
+                                            placeholder="Sélectionnez l'emplacement">
+                                    </div>
+                                    <div class="form-group col-lg-3 col-sm-12 mb-3">
+                                        <select class="form-control input-lg select2">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-3 col-sm-12 mb-3">
+                                        <button class="btn btn-block btn-danger btn-lg">
+                                            <i class="fa fa-search mr-1"></i> Rechercher
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="bg-white border-bottom">
+            <div class="container">
+                <div class="page-header">
+                    <h4 class="page-title">Profil du candidat</h4>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><a href="#">Liste-emploi</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>      
+    </div>
+    <section class="sptb">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="profile-pic mb-0">
+                                <div class="d-md-flex">
+                                    <img src="../../../img/user.jpg" alt="USER" class="w100 h-100 border-round">
+                                    <div class="ml-4">
+                                        <a href="#" class="text-dark">
+                                            <h4 class="mt-3 mb-1 font-weight-bold">Ernest KOUASSI</h4>
+                                        </a>
+                                        <span>
+                                            <small class="text-muted">
+                                                Dernière activité 13-06-2019
+                                            </small>
+                                        </span>
+                                        <div class="mt-3 mb-1 profile-details">
+                                            <a href="#" class="mr-4">
+                                                <i class="fa fa-desktop mr-1"></i>FullStack Deleveloper
+                                            </a>
+                                            <a href="#" class="mr-4">
+                                                <i class="fa fa-map-marker-alt mr-1"></i>Abidjan, Marcory
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-clock mr-1"></i>A plein temps
+                                            </a>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class="fa fa-download"></i>
+                                            Télécharger le CV
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-user-tab">
+                        <div class="tab-menu-heading">
+                            <div class="tabs-menu">
+                                <ul class="nav">
+                                    <li>
+                                        <a href="#" class="active" data-toggle="tab">Offes d'emploi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-toggle="tab">Profil</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-toggle="tab">Expériences professionnelles</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-toggle="tab">Compétences</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card mb-lg-0 border-0">
+                                <div class="card-body">
+                                    <div class="border-0">
+                                        <div class="tab-content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="mobile-nav">
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="#" class="menu-link active">
+                    <i class="material-icons">home</i>
+                    Accueil
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link button-collapse" data-activates="mobile-menu">
+                    <i class="material-icons">menu</i>
+                    Services
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                    <i class="material-icons">search</i>
+                    Rechercher
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                    <i class="material-icons">work</i>
+                    Emploi
+                </a>
+            </li>
+        </ul>
+        </nav>
+    </div>
+    
+    <a href="#" id="notification">
+        <span class="notification-text">Créer une alerte emploi</span>
+        <i class="fa fa-bell"></i>
+    </a>
+
+    <a href="#" id="back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <script src="../../../js/app.js"></script>
+    <script src="../../../js/sticky.js"></script>
+</body>
+
+</html>

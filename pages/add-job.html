@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mr KE">
+    <title>JobPortal</title>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="OwlCarousel2/dist/assets/owl.carousel.css">
+    <script src="../OwlCarousel2/dist/owl.carousel.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body>
+<div id="global-loader">
+    <img src="../img/loader.svg" alt="LOADER" class="loader-img">
+</div>
+<header class="header-main">
+    <div class="top-bar">
+        <div class="container">
+
+            <div class="desktop-topbar-1">
+                <ul class="socials">
+                    <li class="li">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="li">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="li">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="desktop-topbar-1 top-bar-right">
+                <ul class="customs">
+                    <li>
+                        <a href="#"><i class="fa fa-user mr-1"></i> S'inscrire</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-lock mr-1"></i> Se connecter</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-tachometer-alt mr-1"></i> Tableau de bord</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container top-bar-mobile">
+            <ul class="top-bar-mobile-left">
+                <li class="mr-2">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="mr-2">
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="mr-2">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </li>
+            </ul>
+            <ul class="top-bar-mobile-right">
+                <li class="mr-2"><a href="#"><i class="fa fa-user"></i></a></li>
+                <li class="mr-2"><a href="#"><i class="fa fa-lock"></i></a></li>
+                <li><a href="#"><i class="fa fa-tachometer-alt"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-nav sticky">
+        <div class="container">
+            <ul class="nav">
+                <div class="desktop-logo">
+                    <li><a href="#"><img src="../img/logo.png" alt="LOGO"></a></li>
+                </div>
+                <div class="nav-items">
+                    <li><a href="#" class="menu-link active">Accueil</a></li>
+                    <li><a href="#" class="menu-link">Services</a></li>
+                    <li><a href="../pages/jobs-items.html" class="menu-link">Emploi</a></li>
+                    <li><a href="#" class="menu-link">Services</a></li>
+                    <li><a href="#" class="menu-link">Contact</a></li>
+                </div>
+                <div class="job-settings">
+                    <li class="mr-2"><a class="btn btn-danger" href="#">Poster une nouvelle offre</a></li>
+                    <li><a class="btn btn-info" href="#">Créer une alerte</a></li>
+                </div>
+            </ul>
+            <ul class="mobile-top-nav">
+                <li>
+                    <a href="#"> <img src="../img/logo.png" class="mobile-logo" alt="LOGO"></a>
+                </li>
+                <li>
+                    <a href="#" class="alert-icon"><i class="fa fa-bell"></i></a>
+                </li>
+
+            </ul>
+            <ul class="side-nav" id="mobile-menu">
+                <li><a href="#">Sass</a></li>
+                <li><a href="#">Components</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">Mobile</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="main">
+    <section>
+        <div class="banner bannering image-cover sptb-1">
+            <div class="banner-text row">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class="mb-1">
+                            Nouvelle offre d'emploi
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="#">Ajouter Emploi</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sptb">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Publier une offre</h3>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title mb-3">Détails du poste</h3>
+                            <form action="#">
+                                <div class="form-group">
+                                    <label class="form-label text-dark">Profession / Titre de l'offre</label>
+                                    <input type="text" class="form-control" placeholder="Entrer le titre de l'offre">
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label text-dark">Type d'emploi</label>
+                                            <select class="form-control select2"></select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label text-dark">Rôle</label>
+                                            <select class="form-control select2"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label text-dark">Expérience Min</label>
+                                            <select class="form-control">
+                                                <option>Choisir</option>
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label text-dark">Expérience Max</label>
+                                            <select class="form-control"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label text-dark">Pays / Villes</label>
+                                            <select class="form-control select2"></select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label text-dark">Localités</label>
+                                            <select class="form-control select2"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label text-dark">Description de l'emploi</label>
+                                    <textarea rows="5" class="form-control" placeholder="Description"></textarea>
+                                </div>
+
+                                <h3 class="card-title mt-6 mb-3">Détails du recruteur</h3>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label text-dark">Embauche pour (nom de l'entreprise)</label>
+                                            <input type="text" class="form-control" placeholder="Nom De L'Entreprise">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label text-dark">Email</label>
+                                            <input type="email" class="form-control" placeholder="Adresse Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label text-dark">Numéro de téléphone</label>
+                                            <input type="tel" class="form-control" placeholder="Numéro de téléphone">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label text-dark">Adresse</label>
+                                            <input type="address" class="form-control" placeholder="Adresse">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer bg-light-50">
+                            <button class="btn btn-success">Soumettre</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Termes et conditions</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled widget-spec mb-0">
+                                <li>
+                                    <i class="fa fa-check text-success"></i> Argent non remboursable
+                                </li>
+                                <li class="ml-5 mb-0">
+                                    <a href="#">Voir plus..</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Avantages de l'annonce sur Hightech </h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled widget-spec mb-0">
+                                <li>
+                                    <i class="fa fa-check text-success"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Conseils de sécurité</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled widget-spec mb-0">
+                                <li>
+                                    <i class="fa fa-check text-success"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sptb bg-white border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="sub-newsletter">
+                        <h3 class="mb-2">
+                            <i class="fa fa-paper-plane mr-2"></i>Abonnez-vous à notre lettre d'information
+                        </h3>
+                        <p class="mb-0">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group sub-input mt-1">
+                        <input type="email" class="form-control input-lg" placeholder="Entrer votre Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary btn-lg- br-tr-3 br-br-3">
+                                Souscrire
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="mobile-nav">
+    <ul class="menu">
+        <li class="menu-item">
+            <a href="#" class="menu-link active">
+                <i class="material-icons">home</i>
+                Accueil
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="#" class="menu-link button-collapse" data-activates="mobile-menu">
+                <i class="material-icons">menu</i>
+                Services
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="#" class="menu-link">
+                <i class="material-icons">search</i>
+                Rechercher
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="#" class="menu-link">
+                <i class="material-icons">work</i>
+                Emploi
+            </a>
+        </li>
+    </ul>
+    </nav>
+</div>
+
+<a href="#" id="notification">
+    <span class="notification-text">Créer une alerte emploi</span>
+    <i class="fa fa-bell"></i>
+</a>
+
+<a href="#" id="back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+<script src="../js/app.js"></script>
+<script src="../js/sticky.js"></script>
+</body>
+
+</html>
